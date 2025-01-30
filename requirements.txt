@@ -1,0 +1,6 @@
+# lets suppose we want pandas,numpy,matplotlib etc for our project so we cannot go again and again to the terminal
+# and do pip install, so we are creating a filw which will contain all the necessary packages and we 
+# download then at once through this file
+pandas
+numpy
+# now to install all of them write pip install -r requirements.txt
