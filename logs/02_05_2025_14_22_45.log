@@ -1,0 +1,4 @@
+[2025-02-05 14:22:46,429] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-05 14:22:49,171] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-05 14:22:49,175] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-05 14:23:09,345] 97 werkzeug - INFO- * Detected change in 'C:\\Users\\vibha\\Downloads\\mera pehla project\\setup.py', reloading

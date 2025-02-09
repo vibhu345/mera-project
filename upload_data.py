@@ -10,7 +10,8 @@ database_name="vibhanshu875" # kuch bhi naam de sakte ho
 collection_name='data' # kuch bhi naam de sakte ho
 df=pd.read_csv("C:\Users\vibha\Downloads\mera pehla project\notebooks\wafer.csv")
 df.head()
-df=df.drop("Unnamed: 0",axis=1)
+if "Unnamed: 0" in df.columns:
+    df=df.drop("Unnamed: 0",axis=1)
 df
 # data ko json mein convert karenge taaki hum iss data ko mongo db pe upload kar sake
 json_record=list(json.loads(df.T.to_json()).values())

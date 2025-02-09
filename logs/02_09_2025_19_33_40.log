@@ -1,0 +1,14 @@
+[2025-02-09 19:33:41,343] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-09 19:33:45,181] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-09 19:33:45,189] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-09 19:33:45,286] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:33:45] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-02-09 19:33:45,304] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:33:45] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-02-09 19:37:03,808] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:37:03] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:37:04,060] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:37:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-02-09 19:37:04,176] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:37:04] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[2025-02-09 19:41:36,737] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:41:36] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:43:28,650] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:43:28] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:43:38,325] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:43:38] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:47:21,077] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:47:21] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:47:21,226] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:47:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-02-09 19:47:21,437] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:47:21] "[33mGET /script.js HTTP/1.1[0m" 404 -

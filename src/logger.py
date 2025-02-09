@@ -3,7 +3,7 @@ import logging
 import os
 # Python ka os module operating system ke sath interact karne ke liye use hota hai. Is code mein os module mainly file paths aur directories handle karne ke liye use ho raha hai.
 from datetime import datetime
-LOG_FILE=f"{datetime.now(),strftime('%m_%d_%Y_%H_%M_%S')}.log"
+LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 # Yeh ek dynamic log file ka naam banata hai, jo current date aur time ke basis pe change hota rahega.
 # Har baar jab tum script run karoge, ek naya log file generate hoga, jo overwrite nahi hoga.
 logs_path=os.path.join(os.getcwd(),"logs")

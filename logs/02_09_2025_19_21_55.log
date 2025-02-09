@@ -1,0 +1,28 @@
+[2025-02-09 19:21:56,434] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-09 19:21:59,117] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-09 19:21:59,125] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-09 19:21:59,166] 65 root - INFO-Bhai data ingestion wala module shuru hone jaaraha hai
+[2025-02-09 19:21:59,166] 48 root - INFO-Mongo danav se data cheene ki taiyaari hai
+[2025-02-09 19:22:08,125] 52 root - INFO-Sarkar mongo danav har gya,hum jjjjjjjjeeeeeeeeeeeeeeet gaye
+[2025-02-09 19:22:08,272] 60 root - INFO-Data ko csv mein convert kar diya,rajya hamara hua
+[2025-02-09 19:22:08,272] 68 root - INFO-got the data from mongodb
+[2025-02-09 19:22:08,272] 69 root - INFO-exited initiate_data_ingestion methods of data ingestion class
+[2025-02-09 19:22:08,272] 43 root - INFO-bhai data tranformation wala module shuru hone wala hai apni seta ki peti band lo
+[2025-02-09 19:22:08,671] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-09 19:22:08,679] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-09 19:22:08,679] 81 root - INFO-bhai model traning mein initiate wale function ke andar hai
+[2025-02-09 19:22:59,632] 94 root - INFO-best found model on both training and testing dataset
+[2025-02-09 19:22:59,640] 95 root - INFO-saving model at path:artifacts\model.pkl
+[2025-02-09 19:22:59,640] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-09 19:22:59,648] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-09 19:22:59,656] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:22:59] "GET /train HTTP/1.1" 200 -
+[2025-02-09 19:23:20,181] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:23:20] "GET /predict HTTP/1.1" 200 -
+[2025-02-09 19:23:20,390] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:23:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2025-02-09 19:23:20,549] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:23:20] "[33mGET /script.js HTTP/1.1[0m" 404 -
+[2025-02-09 19:33:38,834] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\sklearn\\pipeline.py', reloading
+[2025-02-09 19:33:38,834] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\sklearn\\utils\\_set_output.py', reloading
+[2025-02-09 19:33:38,842] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\sklearn\\impute\\_base.py', reloading
+[2025-02-09 19:33:38,850] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\sklearn\\base.py', reloading
+[2025-02-09 19:33:38,891] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:33:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2025-02-09 19:33:38,943] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:33:38] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-02-09 19:33:39,253] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:33:39] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -

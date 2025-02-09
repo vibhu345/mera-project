@@ -5,6 +5,7 @@ import pandas as pd
 from  pymongo import MongoClient #MongoClient को import किया गया है ताकि हम MongoDB database से connect कर सकें।
 from zipfile import Path# यह फ़ाइलों की path handling के लिए उपयोग होता है।
 from src.constant import *
+from sklearn.preprocessing import LabelEncoder
 from src.exception import CustomException
 from src.logger import logging
 from src.utils.main_utils import MainUtils
@@ -46,15 +47,30 @@ class DataTransformation:
             y=np.where(dataframe[TARGET_COLUMN]==-1,0,1)#targetcolumn mein jaha -1 hai usse 0 kar do aur 1 ko 1 hi rehne do
             x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=1)
             preprocessor=self.data_transform_kareahe_hai()
+            x_train=pd.DataFrame(x_train)
+
+            x_test=pd.DataFrame(x_test)
+            encoders={}
+            for col in x_train.select_dtypes(include=['object']).columns:
+                encoder = LabelEncoder()
+                x_train[col] = encoder.fit_transform(x_train[col])
+                encoders[col]=encoder
+            for col in x_test.select_dtypes(include=['object']).columns:
+                if col in encoders:  # Ensure the column exists in both train and test
+                    try:
+                        x_test[col] = encoders[col].transform(x_test[col])  # Transform test data
+                    except ValueError:
+                        # Handle unknown labels by replacing them with -1
+                        x_test[col] = x_test[col].apply(lambda x: -1 if x not in encoders[col].classes_ else encoders[col].transform([x])[0])
             x_train_scalled=preprocessor.fit_transform(x_train)
             x_test_scalled=preprocessor.transform(x_test)
             preprocessor_path=self.data_transformation_config.transformed_object_file_path
-            os.makedirs(os.path.dirname(preprocessor_path,exist_ok=True))
+            os.makedirs(os.path.dirname(preprocessor_path),exist_ok=True)
         #    os.path.dirname(preprocessor_path) file path को directory path में बदल देता है।
         # os.makedirs() सिर्फ directory बनाएगा, file नहीं।
-            self.utils.save_objects(file_path=preprocessor_path,obj=preprocessor)
-            train_arr=np.c_(x_train_scalled,np.array(y_train))
-            test_arr=np.c_(x_test_scalled,np.array(y_test))
+            self.utils.save_object(file_path=preprocessor_path,obj=preprocessor)
+            train_arr=np.column_stack((x_train_scalled,np.array(y_train)))
+            test_arr=np.column_stack((x_test_scalled,np.array(y_test)))
             return (train_arr,test_arr,preprocessor_path)
         except Exception as e:
             raise CustomException (e,sys) from e

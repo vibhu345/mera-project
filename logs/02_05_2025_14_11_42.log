@@ -1,0 +1,51 @@
+[2025-02-05 14:11:43,391] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-05 14:11:46,287] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-05 14:11:46,306] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-05 14:11:50,694] 65 root - INFO-Bhai data ingestion wala module shuru hone jaaraha hai
+[2025-02-05 14:11:50,695] 48 root - INFO-Mongo danav se data cheene ki taiyaari hai
+[2025-02-05 14:11:56,154] 65 root - INFO-Bhai data ingestion wala module shuru hone jaaraha hai
+[2025-02-05 14:11:56,154] 48 root - INFO-Mongo danav se data cheene ki taiyaari hai
+[2025-02-05 14:11:58,492] 52 root - INFO-Sarkar mongo danav har gya,hum jjjjjjjjeeeeeeeeeeeeeeet gaye
+[2025-02-05 14:11:58,554] 60 root - INFO-Data ko csv mein convert kar diya,rajya hamara hua
+[2025-02-05 14:11:58,556] 68 root - INFO-got the data from mongodb
+[2025-02-05 14:11:58,556] 69 root - INFO-exited initiate_data_ingestion methods of data ingestion class
+[2025-02-05 14:11:58,556] 43 root - INFO-bhai data tranformation wala module shuru hone wala hai apni seta ki peti band lo
+[2025-02-05 14:11:58,664] 65 root - INFO-Bhai data ingestion wala module shuru hone jaaraha hai
+[2025-02-05 14:11:58,666] 48 root - INFO-Mongo danav se data cheene ki taiyaari hai
+[2025-02-05 14:11:58,838] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:11:58,843] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:11:58,845] 81 root - INFO-bhai model traning mein initiate wale function ke andar hai
+[2025-02-05 14:12:08,480] 52 root - INFO-Sarkar mongo danav har gya,hum jjjjjjjjeeeeeeeeeeeeeeet gaye
+[2025-02-05 14:12:08,611] 60 root - INFO-Data ko csv mein convert kar diya,rajya hamara hua
+[2025-02-05 14:12:08,611] 68 root - INFO-got the data from mongodb
+[2025-02-05 14:12:08,612] 69 root - INFO-exited initiate_data_ingestion methods of data ingestion class
+[2025-02-05 14:12:08,612] 43 root - INFO-bhai data tranformation wala module shuru hone wala hai apni seta ki peti band lo
+[2025-02-05 14:12:08,928] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:12:08,930] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:12:08,932] 81 root - INFO-bhai model traning mein initiate wale function ke andar hai
+[2025-02-05 14:12:10,082] 52 root - INFO-Sarkar mongo danav har gya,hum jjjjjjjjeeeeeeeeeeeeeeet gaye
+[2025-02-05 14:12:10,150] 60 root - INFO-Data ko csv mein convert kar diya,rajya hamara hua
+[2025-02-05 14:12:10,150] 68 root - INFO-got the data from mongodb
+[2025-02-05 14:12:10,151] 69 root - INFO-exited initiate_data_ingestion methods of data ingestion class
+[2025-02-05 14:12:10,151] 43 root - INFO-bhai data tranformation wala module shuru hone wala hai apni seta ki peti band lo
+[2025-02-05 14:12:10,334] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:12:10,336] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:12:10,337] 81 root - INFO-bhai model traning mein initiate wale function ke andar hai
+[2025-02-05 14:12:31,541] 94 root - INFO-best found model on both training and testing dataset
+[2025-02-05 14:12:31,541] 95 root - INFO-saving model at path:artifacts\model.pkl
+[2025-02-05 14:12:31,542] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:12:31,545] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:12:31,547] 97 werkzeug - INFO-127.0.0.1 - - [05/Feb/2025 14:12:31] "GET /train HTTP/1.1" 200 -
+[2025-02-05 14:12:38,736] 94 root - INFO-best found model on both training and testing dataset
+[2025-02-05 14:12:38,738] 95 root - INFO-saving model at path:artifacts\model.pkl
+[2025-02-05 14:12:38,740] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:12:38,749] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:12:38,751] 97 werkzeug - INFO-127.0.0.1 - - [05/Feb/2025 14:12:38] "GET /train HTTP/1.1" 200 -
+[2025-02-05 14:12:57,519] 94 root - INFO-best found model on both training and testing dataset
+[2025-02-05 14:12:57,519] 95 root - INFO-saving model at path:artifacts\model.pkl
+[2025-02-05 14:12:57,519] 51 root - INFO-Entered the save_object method of MainUtils class
+[2025-02-05 14:12:57,519] 59 root - INFO-Exited the save_object method of MainUtils class
+[2025-02-05 14:12:57,534] 97 werkzeug - INFO-127.0.0.1 - - [05/Feb/2025 14:12:57] "GET /train HTTP/1.1" 200 -
+[2025-02-05 14:13:28,282] 97 werkzeug - INFO- * Detected change in 'C:\\Users\\vibha\\AppData\\Roaming\\Python\\Python312\\site-packages\\bson\\codec_options.py', reloading
+[2025-02-05 14:13:28,535] 97 werkzeug - INFO- * Detected change in 'C:\\Users\\vibha\\AppData\\Roaming\\Python\\Python312\\site-packages\\pymongo\\synchronous\\database.py', reloading
+[2025-02-05 14:13:28,598] 97 werkzeug - INFO- * Detected change in 'C:\\Users\\vibha\\AppData\\Roaming\\Python\\Python312\\site-packages\\pymongo\\synchronous\\collection.py', reloading

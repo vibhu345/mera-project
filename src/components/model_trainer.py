@@ -50,17 +50,32 @@ class ModelTrainer:
             return best_model_name,best_model_object,best_model_score,report
         except Exception as e:
             raise CustomException(e,sys)
-    def finetune_best_model(self,best_model_object:object,best_model_score,x_train,y_train)-> object:
+    # Finetune method me
+    # Finetune method me
+    def finetune_best_model(self, best_model_object: object, best_model_score, x_train, y_train) -> object:
         try:
-            model_param_grid=self.utils.read_yaml_file(self.model_trainer_config.model_config_file_path)
-            grid_search=GridSearchCV(best_model_object,param_grid=model_param_grid,cv=5,n_jobs=-1)
-            grid_search.fit(x_train,y_train)
-            best_param=grid_search.best_params_
-            print('best_params are',best_param)
-            finetuned_model=best_model_object.set_params(**best_param)
+            # Read the config YAML file
+            model_param_grid = self.utils.read_yaml_file(self.model_trainer_config.model_config_file_path)
+            print("model_param_grid:", model_param_grid)  # Print to debug
+            
+            # Access the model parameter grid using 'model_selection' key
+            for model_name, params in model_param_grid['model_selection']['model'].items():
+                for param_name, param_values in params['search_param_grid'].items():
+                    if not isinstance(param_values, list):
+                        model_param_grid['model_selection']['model'][model_name]['search_param_grid'][param_name] = [param_values]
+
+            # Now perform GridSearchCV
+            grid_search = GridSearchCV(best_model_object, param_grid=model_param_grid['model_selection']['model'][best_model_object.__class__.__name__]['search_param_grid'], cv=5, n_jobs=-1)
+            grid_search.fit(x_train, y_train)
+
+            best_param = grid_search.best_params_
+            print('best_params are', best_param)
+            finetuned_model = best_model_object.set_params(**best_param)
+
             return finetuned_model
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e, sys)
+
     def initiate_model_trainer(self,train_array,test_array):
         try:
             logging.info(f"bhai model traning mein initiate wale function ke andar hai")
@@ -88,6 +103,18 @@ class ModelTrainer:
             return self.model_trainer_config.trained_model_path,test_accuracy_score
         except Exception as e:
             raise CustomException(e,sys)
+    # def finetune_best_model(self,best_model_object:object,best_model_score,x_train,y_train)-> object:
+    #     try:
+    #         model_param_grid=self.utils.read_yaml_file(self.model_trainer_config.model_config_file_path)
+    #         grid_search=GridSearchCV(best_model_object,param_grid=model_param_grid,cv=5,n_jobs=-1)
+    #         grid_search.fit(x_train,y_train)
+    #         best_param=grid_search.best_params_
+    #         print('best_params are',best_param)
+    #         finetuned_model=best_model_object.set_params(**best_param)
+    #         return finetuned_model
+    #     except Exception as e:
+    #         raise CustomException(e,sys)
+
 
 
 

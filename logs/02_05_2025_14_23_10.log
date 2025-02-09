@@ -1,0 +1,11 @@
+[2025-02-05 14:23:11,409] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-05 14:23:14,138] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-05 14:23:14,143] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-05 14:23:28,003] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+[2025-02-05 14:23:28,063] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+[2025-02-05 14:23:28,136] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask\\templating.py', reloading
+[2025-02-05 14:23:28,175] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+[2025-02-05 14:23:28,207] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\jinja2\\environment.py', reloading
+[2025-02-05 14:23:28,319] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+[2025-02-05 14:23:28,347] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+[2025-02-05 14:23:28,381] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading

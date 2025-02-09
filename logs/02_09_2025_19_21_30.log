@@ -1,0 +1,12 @@
+[2025-02-09 19:21:30,510] 160 numexpr.utils - INFO-NumExpr defaulting to 8 threads.
+[2025-02-09 19:21:34,164] 97 werkzeug - WARNING- * Debugger is active!
+[2025-02-09 19:21:34,176] 97 werkzeug - INFO- * Debugger PIN: 130-876-374
+[2025-02-09 19:21:40,061] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:21:40] "GET / HTTP/1.1" 200 -
+[2025-02-09 19:21:40,319] 97 werkzeug - INFO-127.0.0.1 - - [09/Feb/2025 19:21:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-02-09 19:21:45,202] 65 root - INFO-Bhai data ingestion wala module shuru hone jaaraha hai
+[2025-02-09 19:21:45,205] 48 root - INFO-Mongo danav se data cheene ki taiyaari hai
+[2025-02-09 19:21:51,054] 97 werkzeug - INFO- * Detected change in 'C:\\Users\\vibha\\AppData\\Roaming\\Python\\Python312\\site-packages\\pymongo\\synchronous\\settings.py', reloading
+[2025-02-09 19:21:51,070] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+[2025-02-09 19:21:51,079] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\http\\server.py', reloading
+[2025-02-09 19:21:51,080] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\socketserver.py', reloading
+[2025-02-09 19:21:51,087] 97 werkzeug - INFO- * Detected change in 'C:\\ProgramData\\anaconda3\\Lib\\threading.py', reloading

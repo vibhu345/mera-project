@@ -46,6 +46,8 @@ class PredictionPipeline:
             # self.utils.load_objects() function us preprocessor ko disk se load kar raha hai.
             # Preprocessor ka kaam hota hai raw input data ko model ke compatible format mein convert karna.
             # Agar preprocessor.pkl ek StandardScaler aur OneHotEncoder ka combination hai, toh yeh naye data par bhi scaling & encoding apply karega.
+            if "_id" not in features.columns:
+                features["_id"] = 0
             transformed_x=preprocessor.transform(features)
             # preprocessor.transform(features) ka matlab hai ki naye aane wale features ko trained preprocessor ke through transform karna.
             preds=model.predict(transformed_x)
@@ -58,7 +60,8 @@ class PredictionPipeline:
         try:
             prediction_column_name:str=TARGET_COLUMN
             input_dataframe:pd.DataFrame=pd.read_csv(input_dataframe_path)
-            input_dataframe=input_dataframe.drop(columns='unnamed: 0')
+            if 'unnamed: 0' in input_dataframe.columns:
+                input_dataframe = input_dataframe.drop(columns='unnamed: 0', axis=1)
             predictions=self.predict(input_dataframe)
             input_dataframe[prediction_column_name]=[pred for pred in predictions]#Model se jo predictions mile, unko ek naye column me store kiya gaya hai
             target_column_mapping={0:'bad',1:'good'}
